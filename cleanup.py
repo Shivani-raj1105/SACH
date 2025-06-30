@@ -20,9 +20,9 @@ if __name__ == '__main__':
         for name in os.listdir(checkpoints_dir):
             if name.startswith('checkpoint-'):
                 ask_and_delete(os.path.join(checkpoints_dir, name), is_dir=True)
-    # Delete feedback.csv
+
     ask_and_delete('feedback.csv')
-    # Delete news_data.csv
+
     ask_and_delete('news_data.csv')
     # Delete retrain_log.txt
     ask_and_delete('retrain_log.txt') 
